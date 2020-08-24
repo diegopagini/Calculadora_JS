@@ -1,0 +1,81 @@
+body {
+  background-image: url(./assets/2677668.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 50px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20% auto;
+}
+
+.calculadora {
+  background-color: white;
+  border-radius: 5%;
+  border: 2px solid black;
+}
+
+.visor {
+  background-color: #E6E6FA;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  width: 100%;
+  height: 70px;
+  border: 1px solid black;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 50px;
+  text-align: end;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 50px;
+  border-radius: 30%;
+}
+
+.num {
+  background-color: lightblue;
+}
+
+.reset {
+  background-color: orange;
+}
+
+.operation {
+  background-color: lightgreen;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+footer ul li a img {
+  max-height: 50px;
+}
