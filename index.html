@@ -13,19 +13,19 @@
     <div class="container">
       <table class="calculadora">
         <tr>
-          <td colspan="4"><input type="text" readonly="true" id="resultado" class="visor"></input></td>
+          <td colspan="4"><form type="text" readonly="true" class="visor" name="resultado"><p id="resultado">0</p></form></td>
         </tr>
         <tr>
-          <td><button id="siete" class="num" value="7">7</button></td><td><button id="ocho" class="num">8</button></td><td><button id="nueve" class="num">9</button></td><td><button id="division" class="operation">/</button></td>
+          <td><button id="siete" class="num" value="7" value="7" onclick="numero('7')">7</button></td><td><button id="ocho" class="num" value="8" onclick="numero('8')">8</button></td><td><button id="nueve" class="num" value="9" onclick="numero('9')">9</button></td><td><button id="division" class="operation" value="/" onclick="operar('/')">/</button></td>
         </tr>
         <tr>
-          <td><button id="cuatro" class="num">4</button></td><td><button id="cinco" class="num">5</button></td><td><button id="seis" class="num">6</button></td><td><button id="multiplicacion" class="operation">*</button></td>
+          <td><button id="cuatro" class="num" value="4" onclick="numero('4')">4</button></td><td><button id="cinco" class="num" value="5" onclick="numero('5')">5</button></td><td><button id="seis" class="num" value="6" onclick="numero('6')">6</button></td><td><button id="multiplicacion" class="operation" value="*" onclick="operar('*')">*</button></td>
         </tr>
         <tr>
-          <td><button id="uno" class="num">1</button></td><td><button id="dos" class="num">2</button></td><td><button id="tres" class="num">3</button></td><td><button id="resta" class="operation">-</button></td>
+          <td><button id="uno" class="num" value="1" onclick="numero('1')">1</button></td><td><button id="dos" class="num" value="2" onclick="numero('2')">2</button></td><td><button id="tres" class="num" value="3" onclick="numero('3')">3</button></td><td><button id="resta" class="operation" value="-" onclick="operar('-')">-</button></td>
         </tr>
         <tr>
-          <td><button id="igual" class="operation">=</button></td><td><button id="reset" class="reset">C</button></td><td><button id="cero" class="num">0</button></td><td><button id="suma" class="operation">+</button></td>
+          <td><button id="igual" class="operation" value="=" onclick="igualar()">=</button></td><td><button id="reset" class="reset" value="c" onclick="borradoTotal()">C</button></td><td><button id="cero" class="num" value="0" onclick="numero('0')">0</button></td><td><button id="suma" class="operation" value="+" onclick="operar('+')">+</button></td>
         </tr>
         <tr>
           <td colspan="4">
